@@ -1,23 +1,17 @@
 '''
 In this task you have to implement a check function in the queue of matrix.
-
 First, define a goal matrix. For example,
 1 2 3
 4 5 6
 7 8 0
-
 Then push some random matrix in the queue along with the goal matrix. After that iteratively pop matrix from the queue. When you get the popped matrix, you have to determine if it is the goal matrix. If it is, then print "Found goal" and break the loop.
-
 An abstract idea is given below for the implementation.
-
 Define goalMatrix 
 1 2 3
 4 5 6
 7 8 0
-
 The queue of matrix (m2, m3, m4, m5 are just notations for representing the matrices)
 Q = m2 m3 m4 m5
-
 while(!queue.empty()){
 	popMatrix = Q.pop()
 	same = checkGoal(goalMatrix, popMatrix)
@@ -25,7 +19,6 @@ while(!queue.empty()){
 		print("Found goal")
 		break
 }
-
 function checkGoal(g, p){
 	if g and p are equal:
 		return true
